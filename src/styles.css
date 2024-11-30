@@ -796,23 +796,29 @@ body {
 
 /* General Styling for Galleries */
 .gallery-new, .gallery-showcase {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px 0;
+    display: flex; /* Flexbox for horizontal scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px; /* Add spacing between items */
+    padding: 10px; /* Optional padding for the container */
+    scroll-snap-type: x mandatory; /* Snap items into view */
 }
 
 .gallery-new-item, .gallery-showcase-item {
-    width: 30%; /* Ensures all items are the same size */
-    overflow: hidden;
-    position: relative;
+    flex: 0 0 auto; /* Prevent shrinking of items */
+    scroll-snap-align: start; /* Align items to the start when scrolling */
 }
 
-.gallery-new-item img, .gallery-showcase-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px; /* Optional for rounded corners */
-    transition: transform 0.3s ease-in-out;
+.gallery-new img, .gallery-showcase img {
+    max-height: 150px; /* Adjust as needed */
+    max-width: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Optional: Ensure images fit nicely */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add shadows */
+}
+
+/* Optional Styling for Smooth Scrolling */
+.gallery-new, .gallery-showcase {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Hover Effect */
