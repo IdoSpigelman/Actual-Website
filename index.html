@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;800&display=swap" rel="stylesheet">
         <title>Portfolio</title>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body {
                 background-image: url("src/images/background.png");
@@ -17,12 +18,14 @@
         
             /* For screens smaller than 768px (phones, tablets) */
             @media only screen and (max-width: 768px) {
-                body {
-                    background-image: url("src/images/phone\ website\ background.png");
-                    background-size: cover; /* Ensures the image still covers the screen */
-                    background-position: top center; /* Adjusts the position to avoid cutting important parts */
-                }
+            body {
+                background-image: url("src/images/background-mobile.png"); /* Mobile-specific background */
             }
+
+            .container {
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+        }
         </style>
 <!---hello test-->
 <!---Test 2 -->
