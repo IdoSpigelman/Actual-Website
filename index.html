@@ -7,11 +7,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;800&display=swap" rel="stylesheet">
         <title>Portfolio</title>
         <meta charset="UTF-8" />
-       <style>
-            body{
+        <style>
+            body {
                 background-image: url("src/images/background.png");
+                background-size: cover; /* Ensures the image covers the screen */
+                background-position: center center; /* Centers the image */
+                background-repeat: no-repeat; /* Prevents the image from repeating */
             }
-       </style>
+        
+            /* For screens smaller than 768px (phones, tablets) */
+            @media only screen and (max-width: 768px) {
+                body {
+                    background-size: cover; /* Ensures the image still covers the screen */
+                    background-position: top center; /* Adjusts the position to avoid cutting important parts */
+                }
+            }
+        </style>
 <!---hello test-->
 <!---Test 2 -->
     </head>
