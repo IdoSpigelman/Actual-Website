@@ -797,27 +797,29 @@ body {
 /* General Styling for Both Galleries */
 .gallery-new, .gallery-showcase {
     display: flex; /* Horizontal layout */
-    gap: 15px; /* Space between items (adjust as needed) */
+    gap: 15px; /* Space between items */
     overflow-x: auto; /* Enable horizontal scrolling */
     padding: 10px; /* Optional padding for the gallery */
     scroll-snap-type: x mandatory; /* Snap scrolling */
 }
 
-.gallery-new-item, .gallery-showcase-item {
-    flex: 0 0 auto; /* Prevent items from shrinking */
-    scroll-snap-align: center; /* Center items when scrolling */
+.gallery-new-item img, .gallery-showcase-item img {
+    width: auto; /* Allow width to scale based on aspect ratio */
+    height: 300px; /* Set a consistent height for images */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.gallery-new img, .gallery-showcase img {
-    width: auto; /* Maintain aspect ratio */
-    height: 150px; /* Adjust to match the image proportions you want */
-    border-radius: 8px; /* Rounded corners (optional) */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+/* Hover Effect */
+.gallery-new-item img:hover, .gallery-showcase-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
-/* Add Smooth Scrolling for Better Experience */
+/* Smooth Scrolling */
 .gallery-new, .gallery-showcase {
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Hover Effect */
