@@ -862,30 +862,3 @@ body {
     transform: scale(1.1) translateY(1px); /* Slight enlargement and upward movement */
 }
 
-.misc-gal {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.misc-gal img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.misc-gal h2 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.misc-gal p {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #555;
-}
