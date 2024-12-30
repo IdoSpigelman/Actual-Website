@@ -866,14 +866,13 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 30px; /* Space between header and images */
   }
   
   .misc-gal h2 {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Ensure spacing between header and images */
   }
   
   .misc-gal img {
@@ -881,7 +880,9 @@ body {
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+    max-height: 400px; /* Matches the size of images in other galleries */
   }
+  
   
   
   
