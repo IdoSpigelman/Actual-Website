@@ -885,28 +885,24 @@ body {
   
   /* Styles for "My Work With MLFootball" section */
   .mlfootball-gallery {
-    text-align: center;
-    margin: 40px 0;
     padding: 20px;
-    background-color: #f9f9f9; /* Light background color to differentiate */
-    border: 1px solid #ddd;
+    background-color: #f8f9fa;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .mlfootball-gallery h2 {
-    display: block; /* Ensures the element is a block-level element */
-    text-align: center; /* Centers the title */
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333; /* Adjust for your theme */
+    font-size: 40px;
+    display: center;
+    color: #2262c9;
 }
 
 .mlfootball-gallery p {
-    display: block; /* Ensures the element is a block-level element */
-    text-align: center; /* Centers the paragraph */
-    font-size: 1rem;
-    color: #555; /* Slightly muted for readability */
+    font-size: 1.5rem;
+    color: #555;
     margin-bottom: 20px;
 }
 
