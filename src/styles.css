@@ -885,6 +885,7 @@ body {
   
   /* Styles for "My Work With MLFootball" section */
 .mlfootball-gallery {
+    text-align: center;
     margin: 40px 0;
     padding: 20px;
     background-color: #f9f9f9; /* Light background color to differentiate */
@@ -893,6 +894,7 @@ body {
 }
 
 .mlfootball-gallery h2 {
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
